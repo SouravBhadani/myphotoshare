@@ -75,4 +75,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Added as per dwvise instalation instrucation
+   config.action_mailer.default_url_options = { host: 'sourav-bhadani.herokuapp.com' }
 end
