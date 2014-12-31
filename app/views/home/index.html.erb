@@ -2,6 +2,7 @@
         <h1>Welcome to My Photo Share App !</h1>
         <p>Preety Cool , Don't you think</p>
          <% if user_signed_in? %>
+             <%= link_to "List Pins" , pins_path , :class=>"btn btn-primary" %>
              <%= link_to "Logout" ,destroy_user_session_path,method: :delete, :class=>"btn btn-primary"  %>
              <%= link_to "Edit Profile" , edit_user_registration_path, :class=>"btn btn-default" %>
         <% else %>
