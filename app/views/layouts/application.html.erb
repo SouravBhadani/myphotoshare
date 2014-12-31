@@ -12,7 +12,7 @@
 <div class="container" >
   
   <% flash.each do | name , msg| %>
-      <%= cantant_tag(:div, msg, class:"alert alert-info") %>
+      <%= content_tag(:div, msg, class:"alert alert-info") %>
   <% end %>
   
   <%= yield %>

@@ -1,8 +1,11 @@
-
 <div class="jumbotron center">
         <h1>Welcome to My Photo Share App !</h1>
         <p>Preety Cool , Don't you think</p>
-        <%= link_to "Login" , new_user_session_path , :class=>"btn btn-default" %>
-         <%= link_to "Join" , new_user_registration_path , :class=>"btn btn-primary" %>
-        
+         <% if user_signed_in? %>
+             <%= link_to "Logout" ,destroy_user_session_path,method: :delete, :class=>"btn btn-primary"  %>
+             <%= link_to "Edit Profile" , edit_user_registration_path, :class=>"btn btn-default" %>
+        <% else %>
+             <%= link_to "Login" , new_user_session_path , :class=>"btn btn-default" %>
+             <%= link_to "Join" , new_user_registration_path , :class=>"btn btn-primary" %>
+        <% end %>
 </div>
