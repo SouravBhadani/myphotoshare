@@ -1,3 +1,4 @@
+<% if @pins.present? %>
 <% @pins.each do |pin| %>
      <%= link_to image_tag(pin.image.url(:thumb)) ,pin%><br />
       <%= pin.descrption %><br />
@@ -8,4 +9,8 @@
     <% end %> 
     </br>
 <% end %>
+<% else %>
+<div class="center">
+    There are no Pins Available 
+</div>
 
