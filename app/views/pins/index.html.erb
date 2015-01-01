@@ -1,16 +1,20 @@
-<% if @pins.present? %>
-<% @pins.each do |pin| %>
-     <%= link_to image_tag(pin.image.url(:thumb)) ,pin%><br />
-      <%= pin.descrption %><br />
-      <%= pin.user.full_name %>  
-     <% if pin.user == current_user %>
-       <%= link_to 'Edit', edit_pin_path(pin) %>
-       <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %> 
-    </br>
-<% end %>
-<% else %>
-<div class="center">
-    There are no Pins Available 
-</div>
-<% end %>
+<%= render "home/jumbo" unless user_signed_in? %>
+ <div id="pins" class="transitions-enabled">
+    <% @pins.each do |pin| %>
+        <div class="box">
+            <div class="panel panel-default">
+                  <%= link_to image_tag(pin.image.url(:thumb)) ,pin%>
+               <div class="panel-body">
+                    <%= pin.descrption %><br />
+                  <strong><%= pin.user.full_name %></strong>    
+                </div>
+                <% if pin.user == current_user %>
+                    <div class="panel-footer">
+                        <%= link_to 'Edit', edit_pin_path(pin) %>
+                        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+                    </div>
+                <% end %>
+            </div>        
+        </div>   
+    <% end %>
+ </div>
