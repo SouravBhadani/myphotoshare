@@ -17,9 +17,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",root_path %></li>
         <li><%= link_to "About Me",home_about_path %></li>
+         <li> <%= link_to "List Pins" , pins_path %></li>
+          
         <% if user_signed_in? %>
-          <li><%= link_to "Add Pin" ,new_pin_path,method: :delete  %></li>
-          <li> <%= link_to "List Pins" , pins_path %></li>
+          <li><%= link_to "Add Pin" ,new_pin_path  %></li>
           <li><%= link_to "Logout" ,destroy_user_session_path,method: :delete  %></li>
           <li><%= link_to "Edit Profile" , edit_user_registration_path %></li>
         <% else %>

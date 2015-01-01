@@ -56,5 +56,4 @@ end
 
   def correct_user
     @pin =current_user.pins.find(params[:id])
-   # redirect_to pins_path, notice: "Not authorize to edit or destroy this pin "
   end  
