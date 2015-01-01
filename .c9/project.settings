@@ -28,6 +28,7 @@
                     "command": "",
                     "debug": true,
                     "default": true,
+                    "env": {},
                     "name": "Ruby on Rails",
                     "runner": "Ruby on Rails (Rails 4.0 + Ruby 2.1)"
                 }
