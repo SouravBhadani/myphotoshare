@@ -50,10 +50,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    dropbox (1.3.0)
-      json (>= 1.2.0)
-      multipart-post (>= 1.1.0)
-      oauth (>= 0.3.6)
+    dropbox-sdk (1.6.4)
+      json
     erubis (2.7.0)
     execjs (2.2.2)
     hike (1.2.3)
@@ -75,17 +73,15 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.2)
     multi_json (1.10.1)
-    multipart-post (2.0.0)
-    oauth (0.4.7)
     orm_adapter (0.5.0)
     paperclip (4.2.1)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
-    paperclipdropbox (1.0.9)
-      dropbox
-      paperclip
+    paperclip-dropbox (1.2.2)
+      dropbox-sdk (~> 1.3)
+      paperclip (>= 3.1, < 5)
     pg (0.17.1)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -163,7 +159,7 @@ DEPENDENCIES
   jquery-turbolinks
   masonry-rails (~> 0.2.0)
   paperclip (~> 4.2.1)
-  paperclipdropbox
+  paperclip-dropbox (>= 1.1.7)
   pg (= 0.17.1)
   rails (= 4.1.6)
   rails_12factor (= 0.0.2)

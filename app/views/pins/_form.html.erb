@@ -20,9 +20,21 @@
       </div>
       <div class="form-group">
         <%= f.label :image %><br>
-        <%= f.file_field :image, class:"form-control" %>
+        <%= f.file_field :image, class:"form-control" ,style:"display:none",id:"lefile" %>
+        
+          <div class="input-append",style:"color:red">
+          <input id="photoCover" class="input-large" type="text">
+          <a class="btn" onclick="$('input[id=lefile]').click();">Browse</a>
+          </div>
+ 
+
       </div>
       <div class="actions">
         <%= f.submit "Create Pin", :class=>"btn btn-primary" %>
       </div>
 <% end %>
+<script type="text/javascript">
+$('input[id=lefile]').change(function() {
+$('#photoCover').val($(this).val());
+});
+</script>
