@@ -6,7 +6,7 @@ class PinsController < ApplicationController
   respond_to :html
 
   def index
-    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
+    @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
     respond_with(@pins)
   end
 
