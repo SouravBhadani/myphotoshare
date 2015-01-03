@@ -4,15 +4,15 @@ class User < ActiveRecord::Base
 
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable
-  devise :database_authenticatable, :registerable, :confirmable,
+  devise :database_authenticatable, :registerable,# :confirmable,
     :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
   
   has_many :pins
   
-  def full_name
-      "#{self.first_name} #{self.last_name}"
+  def name obj
+      self.first_name=obj
   end  
   
   def self.find_for_oauth(auth, signed_in_resource = nil)
@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
       # Create the user if it's a new registration
       if user.nil?
         user = User.new(
-          first_name: auth.extra.raw_info.name,
+          name: auth.extra.raw_info.name,
           #username: auth.info.nickname || auth.uid,
           email: email ? email : "#{TEMP_EMAIL_PREFIX}-#{auth.uid}-#{auth.provider}.com",
           password: Devise.friendly_token[0,20]
