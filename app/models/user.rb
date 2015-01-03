@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
   
-  has_many :pins
+  has_many :pins , dependent: :destroy
   
   def name obj
       self.first_name=obj

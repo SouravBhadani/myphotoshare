@@ -3,10 +3,10 @@
     <% @pins.each do |pin| %>
         <div class="box">
             <div class="panel panel-default">
-                  <%= link_to pin.descrption ,pin%>
+                  <%= link_to image_tag(pin.image.url(:thumb)) ,pin%>
                <div class="panel-body">
                     <%= pin.descrption %><br />
-                  <strong><%= %></strong>    
+                  <strong><%= pin.user.full_name %></strong>    
                 </div>
                 <% if pin.user == current_user %>
                     <div class="panel-footer">

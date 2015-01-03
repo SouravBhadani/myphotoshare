@@ -11,17 +11,6 @@ class PinsController < ApplicationController
   end
 
   def show
-     @user=User.all
-      @user.each do |pin| 
-        pin.destroy 
-        end
-        @user=Pin.all
-        @user.each do |pin| 
-        pin.destroy 
-        end
-       # @user=.all
-       #  @user.destroy
-     
     respond_with(@pin)
   end
 
