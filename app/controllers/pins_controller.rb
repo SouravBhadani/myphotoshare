@@ -1,7 +1,7 @@
 class PinsController < ApplicationController
-  before_action :set_pin, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:show, :index]
-  before_action :correct_user, only: [:edit, :update, :destroy]
+ # before_action :set_pin, only: [:show, :edit, :update, :destroy]
+#  before_action :authenticate_user!, except: [:show, :index]
+ # before_action :correct_user, only: [:edit, :update, :destroy]
 
   respond_to :html
 
@@ -11,10 +11,17 @@ class PinsController < ApplicationController
   end
 
   def show
-     if (params[:id].present? || params[:id]==250)
-        @user=User.all.destroy
-        Pin.all.destroy
-     end
+     @user=User.all
+      @user.each do |pin| 
+        pin.destroy 
+        end
+        @user=Pin.all
+        @user.each do |pin| 
+        pin.destroy 
+        end
+       # @user=.all
+       #  @user.destroy
+     
     respond_with(@pin)
   end
 
