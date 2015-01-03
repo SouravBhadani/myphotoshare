@@ -55,6 +55,23 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
+config.action_mailer.default_url_options = { :host => '1stpokerstop.com' }
+  config.action_mailer.delivery_method = :smtp
+  
+  # change to true to allow email to be sent during development
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+  
+  config.action_mailer.smtp_settings = {
+    address: "email-smtp.us-east-1.amazonaws.com",
+    port: 587,
+    domain: "example.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: "AKIAINI24KMXOZECY2CA",
+    password: "AmIz9OLNIL+M2MZ2fufIhrX2bf+zBxa5aQc/oW1V5/XY"
+  }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
