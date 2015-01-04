@@ -27,7 +27,6 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
-gem "koala", "~> 1.10.0rc" # Facebook API 
-
-
-
+gem 'simple_form'
+#gem 'client_side_validations'
+#gem 'client_side_validations-simple_form'
