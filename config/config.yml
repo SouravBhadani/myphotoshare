@@ -1,0 +1,9 @@
+development: 
+  # https://enbake1.fwd.wf/
+  facebook_key: 408615452637264
+  facebook_secret : cfa1c181342f22e06dd0e6786674760a
+  
+production: 
+  # http://event-booking.herokuapp.com/
+  facebook_key: 609773805816458
+  facebook_secret : e67b668550269741963eaa879a147369
