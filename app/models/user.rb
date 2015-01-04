@@ -1,19 +1,28 @@
 class User < ActiveRecord::Base
   TEMP_EMAIL_PREFIX = 'change@me'
   TEMP_EMAIL_REGEX = /\Achange@me/
-
+  before_save :set_full_name
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable
   devise :database_authenticatable, :registerable,# :confirmable,
     :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
+  validates_presence_of :first_name,:email
   
   has_many :pins , dependent: :destroy
   
-  def name obj
-      self.first_name=obj
+  def set_full_name
+     if self.first_name.present? && (self.first_name.split(" ").length == 2)
+        self.first_name = self.first_name.split(" ").first
+        self.last_name ||=  self.first_name.split(" ").last 
+     end
+     # self.full_name= "#{self.first_name}  #{self.last_name}"
   end  
+  
+  def fullname
+        "#{self.first_name}  #{self.last_name}"
+  end
   
   def self.find_for_oauth(auth, signed_in_resource = nil)
 
