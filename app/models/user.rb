@@ -20,7 +20,7 @@ class User < ActiveRecord::Base
      # self.full_name= "#{self.first_name}  #{self.last_name}"
   end  
   
-  def fullname
+  def full_name
         "#{self.first_name}  #{self.last_name}"
   end
   
