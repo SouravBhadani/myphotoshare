@@ -5,7 +5,7 @@ Devise.setup do |config|
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = '96dce1a427819e6873e7af609a9d50412b9ca91b4c646c2b431206634daa21d07d46b27d7e6a750b2e69d1e42e0128e3d5518df048332cf601151955905645c7'
-  # config.omniauth :facebook, "609773805816458", "e67b668550269741963eaa879a147369"
+  config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET']
   # config.omniauth :twitter, "KEY", "SECRET"
   # config.omniauth :linked_in, "KEY", "SECRET"
 
