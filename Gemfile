@@ -27,5 +27,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem "koala", "~> 1.10.0rc" # Facebook API 
+
 
 
