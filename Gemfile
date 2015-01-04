@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.6'
 group :development, :test do
  gem 'sqlite3','1.3.9'
- gem 'pry'
 end
 group :production do
     gem 'pg',     '0.17.1'
