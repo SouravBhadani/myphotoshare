@@ -1,8 +1,8 @@
 <div class="row">
-     <div class="col-md-offset-2 col-md-8">
+     <div class="col-md-offset-2 col-md-8 center">
           <div class="panel panel-default center">
                   <div class="panel-heading ">
-                  <%= image_tag  @pin.image.url%>
+                  <%= image_tag  @pin.image.url(:medium)%>
                   </div>
                 <div class="panel-body">
                     <%= @pin.descrption %><br />
