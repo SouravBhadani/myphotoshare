@@ -3,7 +3,7 @@
     <% @pins.each do |pin| %>
         <div class="box">
             <div class="panel panel-default">
-                  <%= link_to image_tag(pin.image.url(:thumb)) ,pin%>
+                  <%= link_to image_tag(pin.image.url(:medium)) ,pin%>
                <div class="panel-body">
                     <%= pin.descrption %><br />
                   <strong><%= pin.user.first_name %></strong>    
