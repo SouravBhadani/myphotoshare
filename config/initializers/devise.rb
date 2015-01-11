@@ -6,14 +6,13 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = '96dce1a427819e6873e7af609a9d50412b9ca91b4c646c2b431206634daa21d07d46b27d7e6a750b2e69d1e42e0128e3d5518df048332cf601151955905645c7'
  
- config.omniauth :facebook, ::APP_CONFIG["facebook_key"], ::APP_CONFIG["facebook_secret"]
- 
- 
+  config.omniauth :facebook, ::APP_CONFIG["facebook_key"], ::APP_CONFIG["facebook_secret"]
   #config.omniauth :facebook, "609773805816458", "e67b668550269741963eaa879a147369"
- config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
+  
+  config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
   # config.omniauth :linked_in, "KEY", "SECRET"
 
- config.omniauth :google_oauth2, '798161002859-0a1av5nfi40fjqvqhf04stfj57kl5rbn.apps.googleusercontent.com', 'RpqlGyGlF-nsnvHPZ_wJJu36'
+  config.omniauth :google_oauth2, '798161002859-d22r54aqp5tvfka9rlirud6ut0ttado0.apps.googleusercontent.com', 'WuxThF12KcNKb3jr-WdZJK3k'
   
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,

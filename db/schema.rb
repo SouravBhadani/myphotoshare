@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150103205641) do
+ActiveRecord::Schema.define(version: 20150111102118) do
 
   create_table "identities", force: true do |t|
     t.integer  "user_id"
@@ -51,6 +51,8 @@ ActiveRecord::Schema.define(version: 20150103205641) do
     t.datetime "updated_at"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "image_url"
+    t.string   "profilr_url"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
