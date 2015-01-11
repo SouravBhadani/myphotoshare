@@ -10,7 +10,7 @@ Devise.setup do |config|
  
  
   #config.omniauth :facebook, "609773805816458", "e67b668550269741963eaa879a147369"
-  # config.omniauth :twitter, "KEY", "SECRET"
+ config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
   # config.omniauth :linked_in, "KEY", "SECRET"
 
   # ==> Mailer Configuration

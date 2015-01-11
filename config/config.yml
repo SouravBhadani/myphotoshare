@@ -7,3 +7,9 @@ production:
   # https://sourav-bhadani.herokuapp.com/
   facebook_key: 282966571869247
   facebook_secret : 2b879d3f7076af0ee50f3156265df5a0
+  
+  twitter_key: "pW6XlJJ1ZSvB0HBO1rGEOSAyS"
+  twitter_secret: "dpkwkJdEC8vHdeBpcR2WpGjEOQU5cTlbj7vGfYDupPJNBx5DVZ"
+  
+  
+   # provider :twitter, "", "dpkwkJdEC8vHdeBpcR2WpGjEOQU5cTlbj7vGfYDupPJNBx5DVZ", image_size: 'normal'
