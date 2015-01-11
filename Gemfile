@@ -27,6 +27,8 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem "omniauth-google-oauth2"
+gem 'oauth2'
 gem 'simple_form'
 gem 'rspec', '~> 3.1.0'
 #gem 'client_side_validations'

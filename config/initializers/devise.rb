@@ -13,6 +13,8 @@ Devise.setup do |config|
  config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
   # config.omniauth :linked_in, "KEY", "SECRET"
 
+ config.omniauth :google_oauth2, '798161002859-0a1av5nfi40fjqvqhf04stfj57kl5rbn.apps.googleusercontent.com', 'RpqlGyGlF-nsnvHPZ_wJJu36'
+  
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
