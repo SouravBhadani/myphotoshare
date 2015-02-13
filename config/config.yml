@@ -3,13 +3,29 @@ development:
   facebook_key: 282966571869247
   facebook_secret : 2b879d3f7076af0ee50f3156265df5a0
   
+  google_key: 798161002859-s9ba66tm7gvtqr1l10soqs6euvnmmjnv.apps.googleusercontent.com
+  google_secret: "n-mbX6vbwTzHcy_joMKZjtAA"
+
+  linkedin_key: "78zklh8gy0kssc"
+  linkedin_secret: "JQqGu7gL8fOMM5Zu"
+  
+  
+  
+  
 production: 
-  # https://sourav-bhadani.herokuapp.com/
+  # https://myphotoshare.herokuapp.com/
+  
+  linkedin_key: "78orw4udq5helu"
+  linkedin_secret: "WWd9LKV7hcfy7Qf8"
+  
   facebook_key: 282966571869247
   facebook_secret : 2b879d3f7076af0ee50f3156265df5a0
   
   twitter_key: "pW6XlJJ1ZSvB0HBO1rGEOSAyS"
   twitter_secret: "dpkwkJdEC8vHdeBpcR2WpGjEOQU5cTlbj7vGfYDupPJNBx5DVZ"
+  
+  google_key: 798161002859-88asu3j73h2ci5m5r1pn08lt17i2lgg2.apps.googleusercontent.com
+  google_secret: "vFVwvNKGiCaDqLCTiYzRseZ2"
   
   
    # provider :twitter, "", "dpkwkJdEC8vHdeBpcR2WpGjEOQU5cTlbj7vGfYDupPJNBx5DVZ", image_size: 'normal'

@@ -1,19 +1,24 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  
+   config.omniauth :facebook, ::APP_CONFIG["facebook_key"], ::APP_CONFIG["facebook_secret"]
+   
+   config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
+   
+   config.omniauth :google_oauth2, ::APP_CONFIG["google_key"], ::APP_CONFIG["google_secret"]
+    
+   config.omniauth :linkedin, ::APP_CONFIG["linkedin_key"], ::APP_CONFIG["linkedin_secret"]
+  
+  
+  
+  
+  
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = '96dce1a427819e6873e7af609a9d50412b9ca91b4c646c2b431206634daa21d07d46b27d7e6a750b2e69d1e42e0128e3d5518df048332cf601151955905645c7'
- 
-  config.omniauth :facebook, ::APP_CONFIG["facebook_key"], ::APP_CONFIG["facebook_secret"]
-  #config.omniauth :facebook, "609773805816458", "e67b668550269741963eaa879a147369"
-  
-  config.omniauth :twitter, ::APP_CONFIG["twitter_key"], ::APP_CONFIG["twitter_secret"]
-  # config.omniauth :linked_in, "KEY", "SECRET"
 
-  config.omniauth :google_oauth2, '798161002859-d22r54aqp5tvfka9rlirud6ut0ttado0.apps.googleusercontent.com', 'WuxThF12KcNKb3jr-WdZJK3k'
-  
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class

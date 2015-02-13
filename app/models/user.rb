@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   validates_format_of :email, :without => TEMP_EMAIL_REGEX, on: :update
-  validates_presence_of :first_name,:email
+  validates_presence_of :email
   
   has_many :pins , dependent: :destroy
   
