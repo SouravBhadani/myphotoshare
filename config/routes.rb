@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
  
+  get 'home/index88'
+
   resources :pins
 
     devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
