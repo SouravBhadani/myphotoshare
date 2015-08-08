@@ -1,0 +1,1223 @@
+
+
+Started GET "/" for 150.129.44.189 at 2015-08-08 06:54:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPin Load (1.8ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2894.4ms)
+  Rendered home/_header.html.erb (3.7ms)
+Completed 200 OK in 6540ms (Views: 6512.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:37 +0000
+
+
+Started GET "/" for 150.129.44.189 at 2015-08-08 06:56:51 +0000
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2762.9ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 3015ms (Views: 3010.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 06:56:55 +0000
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 06:56:57 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  Rendered pins/show.html.erb within layouts/application (532045.0ms)
+Completed 500 Internal Server Error in 532050ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+     6:                   </div>
+     7:                 <div class="panel-body">
+     8:                     <%= @pin.descrption %><br />
+     9:                      <%= like_for(@pin) %>
+    10:                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    11:                   <strong><%= @pin.user.fullname %></strong> <br />   
+    12:                 <% if user_signed_in? %>  
+  app/helpers/application_helper.rb:5:in `likes_detail'
+  app/helpers/application_helper.rb:26:in `block in like_for'
+  app/helpers/application_helper.rb:25:in `like_for'
+  app/views/pins/show.html.erb:9:in `_app_views_pins_show_html_erb___154727945050453120_69900165509940'
+  app/controllers/pins_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/pins/5" for 150.129.44.189 at 2015-08-08 07:05:49 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 5[0m
+  [1m[35m (6.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "likes" ("created_at", "likeable_id", "likeable_type", "liker_id", "liker_type") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-08-08 07:05:49.952672"], ["likeable_id", 5], ["likeable_type", "Pin"], ["liker_id", 9], ["liker_type", "User"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 5)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered pins/show.html.erb within layouts/application (772.0ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 1046ms (Views: 995.5ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:05:50 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (687.1ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 956ms (Views: 951.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:05:51 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (700.1ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 1042ms (Views: 1038.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:05:52 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (697.9ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 1095ms (Views: 1090.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pins/6" for 150.129.44.189 at 2015-08-08 07:05:53 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "likes" ("created_at", "likeable_id", "likeable_type", "liker_id", "liker_type") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-08-08 07:05:54.090059"], ["likeable_id", 6], ["likeable_type", "Pin"], ["liker_id", 9], ["liker_type", "User"]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 6)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered pins/show.html.erb within layouts/application (704.5ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 992ms (Views: 973.7ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:05:54 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (718.3ms)
+  Rendered home/_header.html.erb (0.8ms)
+Completed 200 OK in 980ms (Views: 975.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pins/6" for 150.129.44.189 at 2015-08-08 07:05:55 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 6[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 6)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered pins/show.html.erb within layouts/application (697.0ms)
+  Rendered home/_header.html.erb (1.2ms)
+Completed 200 OK in 982ms (Views: 978.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:05:56 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (694.2ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 987ms (Views: 982.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:06:23 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (677.6ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 959ms (Views: 956.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:26 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 07:06:27 +0000
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 150.129.44.189 at 2015-08-08 07:06:42 +0000
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:29:14 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  Rendered pins/show.html.erb within layouts/application (715.9ms)
+Completed 500 Internal Server Error in 733ms
+
+ActionView::Template::Error (undefined method `contant_tag' for #<#<Class:0x007f25cd437818>:0x007f25cd436dc8>):
+     6:                   </div>
+     7:                 <div class="panel-body">
+     8:                     <%= @pin.descrption %><br />
+     9:                      <%= like_for(@pin) %>
+    10:                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    11:                   <strong><%= @pin.user.fullname %></strong> <br />   
+    12:                 <% if user_signed_in? %>  
+  app/helpers/application_helper.rb:10:in `block in likes_detail'
+  app/helpers/application_helper.rb:9:in `likes_detail'
+  app/helpers/application_helper.rb:30:in `block in like_for'
+  app/helpers/application_helper.rb:29:in `like_for'
+  app/views/pins/show.html.erb:9:in `_app_views_pins_show_html_erb___154727945050453120_69900165509940'
+  app/controllers/pins_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:32:28 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (770.5ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 1085ms (Views: 1065.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:33 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:34 +0000
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:32:51 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (721.6ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 956ms (Views: 951.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:54 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:55 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 07:32:55 +0000
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:34:44 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (709.2ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 1126ms (Views: 1122.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pins/7" for 150.129.44.189 at 2015-08-08 07:35:55 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (717.9ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 997ms (Views: 993.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:58 +0000
+
+
+Started GET "/assets/home.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:58 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:35:58 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 150.129.44.189 at 2015-08-08 07:35:59 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/home.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 150.129.44.189 at 2015-08-08 07:36:00 +0000
+
+
+Started POST "/socials/like?id=7&likable_type=Pin" for 150.129.44.189 at 2015-08-08 07:37:45 +0000
+
+ActionController::RoutingError (No route matches [POST] "/socials/like"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (16.1ms)
+
+
+Started GET "/pins/7" for 103.18.74.240 at 2015-08-08 16:31:55 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (1.3ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  Rendered pins/show.html.erb within layouts/application (1628.5ms)
+Completed 500 Internal Server Error in 1974ms
+
+ActionView::Template::Error (undefined method `like_pin_path' for #<#<Class:0x007f25cd35d500>:0x007f25cd35c808>):
+     6:                   </div>
+     7:                 <div class="panel-body">
+     8:                     <%= @pin.descrption %><br />
+     9:                      <%= like_for(@pin) %>
+    10:                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    11:                   <strong><%= @pin.user.fullname %></strong> <br />   
+    12:                 <% if user_signed_in? %>  
+  app/helpers/application_helper.rb:9:in `likes_detail'
+  app/helpers/application_helper.rb:30:in `block in like_for'
+  app/helpers/application_helper.rb:29:in `like_for'
+  app/views/pins/show.html.erb:9:in `_app_views_pins_show_html_erb___154727945050453120_69900165509940'
+  app/controllers/pins_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (30.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (23.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (152.6ms)
+
+
+Started GET "/pins/7" for 103.18.74.240 at 2015-08-08 16:39:02 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  Rendered pins/show.html.erb within layouts/application (818.2ms)
+Completed 500 Internal Server Error in 836ms
+
+ActionView::Template::Error (undefined method `like_pin_path' for #<#<Class:0x007f25cd35d500>:0x007f25cd055ad8>):
+     6:                   </div>
+     7:                 <div class="panel-body">
+     8:                     <%= @pin.descrption %><br />
+     9:                      <%= like_for(@pin) %>
+    10:                      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    11:                   <strong><%= @pin.user.fullname %></strong> <br />   
+    12:                 <% if user_signed_in? %>  
+  app/helpers/application_helper.rb:9:in `likes_detail'
+  app/helpers/application_helper.rb:30:in `block in like_for'
+  app/helpers/application_helper.rb:29:in `like_for'
+  app/views/pins/show.html.erb:9:in `_app_views_pins_show_html_erb___154727945050453120_69900165509940'
+  app/controllers/pins_controller.rb:16:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+
+
+Started GET "/pins/7" for 103.18.74.240 at 2015-08-08 16:41:15 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (811.1ms)
+  Rendered home/_header.html.erb (11.3ms)
+Completed 200 OK in 1944ms (Views: 1916.6ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:18 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:19 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.240 at 2015-08-08 16:41:20 +0000
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 103.18.74.240 at 2015-08-08 16:41:30 +0000
+
+
+Started GET "/pins/7" for 103.18.74.240 at 2015-08-08 16:45:41 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (703.2ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 1014ms (Views: 995.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:43 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:43 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:44 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.240 at 2015-08-08 16:45:45 +0000
+
+
+Started GET "/pins/7" for 103.18.74.240 at 2015-08-08 16:49:17 +0000
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins"  WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."liker_id" = 9 AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"  WHERE "users"."id" IN (SELECT "likes"."liker_id" FROM "likes"  WHERE "likes"."liker_type" = 'User' AND "likes"."likeable_type" = 'Pin' AND "likes"."likeable_id" = 7)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered pins/show.html.erb within layouts/application (705.4ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 968ms (Views: 964.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:19 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:19 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:20 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:20 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:21 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.240 at 2015-08-08 16:49:22 +0000
+
+
+Started POST "/like_pin?id=7&likable_type=Pin" for 103.18.74.240 at 2015-08-08 16:49:43 +0000
+
+ActionController::RoutingError (uninitialized constant Socials):
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.6) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (10.8ms)

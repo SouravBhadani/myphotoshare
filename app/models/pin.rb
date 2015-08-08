@@ -1,4 +1,6 @@
 class Pin < ActiveRecord::Base
+    
+    acts_as_likeable
     belongs_to :user
     has_attached_file :image, :styles => { :medium => "240x300>", :thumb => "50x50>", :normal => "420x680>"  },
                     :storage => :dropbox,

@@ -45,6 +45,10 @@ class PinsController < ApplicationController
     @pin.destroy
      redirect_to pins_path
   end
+  
+  def like_pin
+      current_user.like!(pin)
+  end 
 
   private
     def set_pin
@@ -54,6 +58,8 @@ class PinsController < ApplicationController
     def pin_params
       params.require(:pin).permit(:descrption,:image)
     end
+    
+     
 end
 
   def correct_user

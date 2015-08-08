@@ -6,11 +6,16 @@
                   </div>
                 <div class="panel-body">
                     <%= @pin.descrption %><br />
+                     <%= like_for(@pin) %>
+                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
                   <strong><%= @pin.user.fullname %></strong> <br />   
-                <% if @pin.user == current_user %>
-                    <%= link_to 'Edit', edit_pin_path(@pin) %>
-                 <% end %>  
+                <% if user_signed_in? %>  
+                    <% if @pin.user == current_user %>
+                       <%= link_to 'Edit', edit_pin_path(@pin) %>
+                    <% end %> 
+                <% end %>     
                     <%= link_to 'Back',pin_path %>
+                    
                 </div>    
             </div>  
         </div>
