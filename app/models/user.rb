@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   validates_presence_of :email
   
   has_many :pins , dependent: :destroy
+  has_many :blogs , dependent: :destroy  
   
   
   def fullname

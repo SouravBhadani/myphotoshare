@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150213190213) do
+ActiveRecord::Schema.define(version: 20150813060158) do
+
+  create_table "blogs", force: true do |t|
+    t.string   "title"
+    t.string   "desc"
+    t.string   "url"
+    t.string   "tags"
+    t.string   "type"
+    t.string   "sub_type"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "follows", force: true do |t|
     t.string   "follower_type"

@@ -1,0 +1,28 @@
+<h1>Listing blogs</h1>
+  <div id="blogs" class="transitions-enabled">
+    <% @blogs.each do |blog| %>
+        <div class="box">
+            <div class="panel panel-default">
+                <%= link_to blog.desc ,blog%>
+                <div class="panel-body">
+                    <%= blog.sub_type %><br />
+                    <%= link_to blog.title ,blog%>  
+                </div>
+                 <div class="panel-footer">
+                        <strong>by <%# blog.user.first_name %></strong>
+                        <strong> <%= blog.created_at.try(:strftime,"%b %d, %Y") %></strong>
+                    </div>
+                <% if blog.user == current_user %>
+                    <div class="panel-footer">
+                        <%= link_to 'Edit', edit_blog_path(blog) %>
+                        <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+                    </div>
+                <% end %>
+            </div>        
+        </div>   
+    <% end %>
+ </div>
+  <div class="center">
+     <%= will_paginate @blogs, renderer: BootstrapPagination::Rails %>
+  </div>
+    

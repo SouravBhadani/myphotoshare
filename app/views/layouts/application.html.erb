@@ -4,6 +4,16 @@
   <title>Photo Share</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <!-- Include jQuery, this can be omitted if it's already included -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     
+    <!-- Include the default theme -->
+    <link rel="stylesheet" href="minified/themes/default.min.css" type="text/css" media="all" />
+     
+    <!-- Include the editors JS -->
+    <script type="text/javascript" src="minified/jquery.sceditor.bbcode.min.js"></script>
+
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
 </head>
