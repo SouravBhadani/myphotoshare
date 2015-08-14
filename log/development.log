@@ -6901,3 +6901,268 @@ NoMethodError (undefined method `id' for nil:NilClass):
   Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (33.1ms)
+
+
+Started GET "/" for 122.180.35.132 at 2015-08-14 09:38:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered home/_jumbo.html.erb (1.1ms)
+  [1m[35mPin Load (0.4ms)[0m  SELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2951.0ms)
+  Rendered home/_header.html.erb (1.4ms)
+Completed 200 OK in 3460ms (Views: 3429.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:33 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:35 +0000
+
+
+Started GET "/assets/blogs.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:35 +0000
+
+
+Started GET "/assets/home.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:35 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:35 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:35 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:36 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:38 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:38 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:38 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:38 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:38 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/application.css?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/home.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:40 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/application.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 122.180.35.132 at 2015-08-14 09:38:45 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/home.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 122.180.35.132 at 2015-08-14 09:39:04 +0000
+
+
+Started GET "/" for 122.180.35.132 at 2015-08-14 11:44:27 +0000
+Processing by PinsController#index as HTML
+  Rendered home/_jumbo.html.erb (0.4ms)
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2806.2ms)
+  Rendered home/_header.html.erb (0.5ms)
+Completed 200 OK in 3083ms (Views: 3080.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 122.180.35.132 at 2015-08-14 11:44:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 122.180.35.132 at 2015-08-14 11:44:33 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 122.180.35.132 at 2015-08-14 11:44:33 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 122.180.35.132 at 2015-08-14 11:44:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangBTypeInBlogs (20150814123642)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.3ms)[0m  [1mCREATE TEMPORARY TABLE "ablogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" varchar(255), "url" varchar(255), "tags" varchar(255), "type" varchar(255), "sub_type" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "blogs"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "ablogs" ("id","title","desc","url","tags","type","sub_type","user_id","created_at","updated_at") VALUES (3, 'hello', 'vjvjvjvjk', 'hbh', 'b', NULL, 'bjb', 10, '2015-08-13 09:10:36.516345', '2015-08-13 20:27:24.982797')[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "blogs"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "desc" text(255), "url" varchar(255), "tags" varchar(255), "type" varchar(255), "sub_type" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ablogs"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "blogs" ("id","title","desc","url","tags","type","sub_type","user_id","created_at","updated_at") VALUES (3, 'hello', 'vjvjvjvjk', 'hbh', 'b', NULL, 'bjb', 10, '2015-08-13 09:10:36.516345', '2015-08-13 20:27:24.982797')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ablogs"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150814123642"]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_followables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_followables' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_follows' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_follows' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_identities_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_identities_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_likeables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_likeables' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_likes' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_likes' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_mentionables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_mentionables' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_mentions' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_mentions' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
