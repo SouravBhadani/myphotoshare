@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :pins
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
   get 'home/about'
+  get 'home/play_tic_toe'  
 end
