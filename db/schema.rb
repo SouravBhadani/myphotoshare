@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150814123642) do
+ActiveRecord::Schema.define(version: 20150815024709) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
     t.text     "desc",       limit: 255
     t.string   "url"
     t.string   "tags"
-    t.string   "type"
+    t.string   "category"
     t.string   "sub_type"
     t.integer  "user_id"
     t.datetime "created_at"
