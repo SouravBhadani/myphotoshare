@@ -14135,3 +14135,16 @@ Started GET "/assets/socials.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10
 
 
 Started GET "/assets/application.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/" for 103.18.74.230 at 2015-08-15 16:30:19 +0000
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 8  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2864.9ms)
+  Rendered home/_header.html.erb (1.3ms)
+Completed 200 OK in 3182ms (Views: 3170.5ms | ActiveRecord: 2.9ms)
