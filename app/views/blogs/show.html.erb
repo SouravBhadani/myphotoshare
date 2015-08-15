@@ -1,5 +1,28 @@
 <p id="notice"><%= notice %></p>
 
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3><%= @blog.title %></h3>
+      <p style='bottom: 10px;float: right; margin-right: 20px;position: relative; '>
+        Posted By: <%= @blog.user.fullname %>
+      </p>
+    </div>
+    <div class="panel-body">
+      <%= @blog.desc %>
+    </div>
+     <div class="panel-footer">
+      <% if user_signed_in? && current_user == @blog.user %>
+        <%= link_to 'Edit', edit_blog_path(@blog) %> |
+      <% end %>  
+        <%= link_to "Back", :back %>
+    </div>
+  </div>
+
+
+
+
+
+<% if false %>
 <p>
   <strong>Title:</strong>
   <%= @blog.title %>
@@ -30,5 +53,5 @@
   <%= @blog.sub_type %>
 </p>
 
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+
+<% end %>
