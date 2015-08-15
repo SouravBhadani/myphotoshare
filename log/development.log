@@ -13769,3 +13769,253 @@ Started GET "/assets/blogs.css?body=1" for 103.18.74.230 at 2015-08-15 12:50:12 
 
 
 Started GET "/assets/home.css?body=1" for 103.18.74.230 at 2015-08-15 12:50:12 +0000
+
+
+Started GET "/" for 103.18.74.230 at 2015-08-15 14:03:50 +0000
+Processing by PinsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 8  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2780.2ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 3074ms (Views: 3070.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:54 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:54 +0000
+
+
+Started GET "/assets/blogs.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:55 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:56 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.230 at 2015-08-15 14:03:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddSlugToPrettylink (20150815152024)
+  [1m[35m (1.4ms)[0m  begin transaction
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE "prettylinks" ADD "slug" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150815152024"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_followables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_followables' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_follows' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_follows' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_type' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_identities_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_identities_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_likeables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_likeables' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_likes' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_likes' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_mentionables' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_mentionables' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='fk_mentions' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='fk_mentions' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_slug' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
