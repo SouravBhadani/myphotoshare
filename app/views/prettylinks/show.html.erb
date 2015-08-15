@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @prettylink.url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @prettylink.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @prettylink.image %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @prettylink.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_prettylink_path(@prettylink) %> |
+<%= link_to 'Back', prettylinks_path %>

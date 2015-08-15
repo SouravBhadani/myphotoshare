@@ -2,14 +2,16 @@
   <div id="blogs" class="transitions-enabled">
     <% @blogs.each do |blog| %>
         <div class="box">
-            <div class="panel panel-default">
-                <%= link_to blog.desc ,blog%>
+            <div class="panel panel-primary">
+                <div class="panel-heading bg-primary">
+                     <%= link_to blog.title ,blog,class: 'bg-primary'%> 
+                </div>
                 <div class="panel-body">
                     <%= blog.sub_type %><br />
                     <%= link_to blog.title ,blog%>  
                 </div>
                  <div class="panel-footer">
-                        <strong>by <%# blog.user.first_name %></strong>
+                        <strong>by <%= blog.user.first_name %></strong>
                         <strong> <%= blog.created_at.try(:strftime,"%b %d, %Y") %></strong>
                     </div>
                 <% if blog.user == current_user %>

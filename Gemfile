@@ -33,6 +33,7 @@ gem 'simple_form'
 gem 'rspec', '~> 3.1.0'
 gem "socialization"
 gem 'pry'
+gem 'friendly_id', '~> 5.1.0'
 
 
 #gem 'client_side_validations'

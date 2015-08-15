@@ -1,0 +1,31 @@
+<h1>Listing prettylinks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Title</th>
+      <th>Image</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prettylinks.each do |prettylink| %>
+      <tr>
+        <td><%= prettylink.url %></td>
+        <td><%= prettylink.title %></td>
+        <td><%= prettylink.image %></td>
+        <td><%= prettylink.user_id %></td>
+        <td><%= link_to 'Show', prettylink %></td>
+        <td><%= link_to 'Edit', edit_prettylink_path(prettylink) %></td>
+        <td><%= link_to 'Destroy', prettylink, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prettylink', new_prettylink_path %>

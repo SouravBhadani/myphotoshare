@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :prettylinks
+
   resources :blogs
 
   root 'pins#index'

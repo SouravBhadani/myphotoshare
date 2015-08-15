@@ -1,0 +1,2 @@
+module PrettylinksHelper
+end

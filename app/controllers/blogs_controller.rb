@@ -14,7 +14,7 @@ class BlogsController < ApplicationController
   end
 
   def new
-    @blog = Blog.new
+    @blog = current_user.blogs.build
     respond_with(@blog)
   end
 
@@ -22,7 +22,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(blog_params)
+    @blog = current_user.blogs.build(blog_params)
     @blog.user_id = current_user.id
     @blog.save
     respond_with(@blog)
