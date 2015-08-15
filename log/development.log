@@ -14019,3 +14019,119 @@ Migrating to AddSlugToPrettylink (20150815152024)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for 103.18.74.230 at 2015-08-15 15:28:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 8  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (3119.1ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 3668ms (Views: 3639.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:06 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:06 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:06 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:06 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:07 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:09 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.230 at 2015-08-15 15:28:10 +0000
