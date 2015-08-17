@@ -34,6 +34,7 @@ gem 'rspec', '~> 3.1.0'
 gem "socialization"
 gem 'pry'
 gem 'friendly_id', '~> 5.1.0'
+
 gem "omniauth-github", '1.1.1'
 
 
