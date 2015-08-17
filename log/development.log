@@ -15367,3 +15367,475 @@ Processing by PinsController#new as HTML
   Rendered pins/new.html.erb within layouts/application (11.7ms)
   Rendered home/_header.html.erb (1.7ms)
 Completed 200 OK in 314ms (Views: 296.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 103.18.74.235 at 2015-08-17 20:08:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered home/_jumbo.html.erb (1.2ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2963.2ms)
+  Rendered home/_header.html.erb (1.5ms)
+Completed 200 OK in 3576ms (Views: 3547.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/blogs.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:25 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:26 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.235 at 2015-08-17 20:08:27 +0000
+
+
+Started GET "/users/sign_in" for 103.18.74.235 at 2015-08-17 20:08:42 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.6ms)
+  Rendered home/_header.html.erb (1.2ms)
+Completed 200 OK in 397ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 103.18.74.235 at 2015-08-17 20:09:26 +0000
+
+
+Started GET "/users/auth/github" for 103.18.74.235 at 2015-08-17 20:09:26 +0000
+
+
+Started GET "/users/auth/github/callback?code=5c9a08c57cb64d75ee49&state=2942e6bdd8efb262210f5f1102fbf946262852f70c48d5e3" for 103.18.74.235 at 2015-08-17 20:09:33 +0000
+
+AbstractController::ActionNotFound (The action 'github' could not be found for OmniauthCallbacksController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/mapper.rb:45:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:404:in `call_app!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.4@rails4/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users/auth/github/callback?code=5c9a08c57cb64d75ee49&state=2942e6bdd8efb262210f5f1102fbf946262852f70c48d5e3" for 103.18.74.235 at 2015-08-17 20:10:22 +0000
+Processing by OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"5c9a08c57cb64d75ee49", "state"=>"2942e6bdd8efb262210f5f1102fbf946262852f70c48d5e3"}
+Redirected to https://workplace-sourav-bhadani.c9.io/users/sign_in
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 103.18.74.235 at 2015-08-17 20:10:23 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered home/_header.html.erb (1.0ms)
+Completed 200 OK in 322ms (Views: 297.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:25 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:26 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:26 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:26 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/blogs.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:27 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:28 +0000
+
+
+Started GET "/users/auth/github" for 103.18.74.235 at 2015-08-17 20:10:46 +0000
+
+
+Started GET "/users/auth/github" for 103.18.74.235 at 2015-08-17 20:10:46 +0000
+
+
+Started GET "/users/auth/github/callback?code=f93d051cfc8caa412480&state=85fca742bfd8a2ae27f8f1aab877bd29750052e2e0f03c01" for 103.18.74.235 at 2015-08-17 20:10:49 +0000
+Processing by OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"f93d051cfc8caa412480", "state"=>"85fca742bfd8a2ae27f8f1aab877bd29750052e2e0f03c01"}
+  [1m[36mIdentity Load (0.3ms)[0m  [1mSELECT  "identities".* FROM "identities"  WHERE "identities"."uid" = '3205619' AND "identities"."provider" = 'github' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mIdentity Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "identities"  WHERE ("identities"."uid" = '3205619' AND "identities"."provider" = 'github') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "identities" ("created_at", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-08-17 20:10:50.940298"], ["provider", "github"], ["uid", "3205619"], ["updated_at", "2015-08-17 20:10:50.940298"]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."id" IS NOT NULL) AND "users"."slug" = 'sourav-kumar' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'change@me-3205619-github.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "first_name", "slug", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2015-08-17 20:10:51.217547"], ["email", "change@me-3205619-github.com"], ["encrypted_password", "$2a$10$qw.gA9ZvfEijhY8waittPOH4opJD563P6Yccmd99c8/TOd8IrusWy"], ["first_name", "Sourav Kumar"], ["slug", "sourav-kumar-a8a74e88-2c8d-4682-abda-7f3605c61222"], ["updated_at", "2015-08-17 20:10:51.217547"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mIdentity Exists (0.2ms)[0m  SELECT  1 AS one FROM "identities"  WHERE ("identities"."uid" = '3205619' AND "identities"."id" != 6 AND "identities"."provider" = 'github') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "identities" SET "updated_at" = ?, "user_id" = ? WHERE "identities"."id" = 6[0m  [["updated_at", "2015-08-17 20:10:51.231588"], ["user_id", 11]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 11  [["current_sign_in_at", "2015-08-17 20:10:51.242382"], ["current_sign_in_ip", "103.18.74.235"], ["last_sign_in_at", "2015-08-17 20:10:51.242382"], ["last_sign_in_ip", "103.18.74.235"], ["sign_in_count", 1], ["updated_at", "2015-08-17 20:10:51.243667"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://workplace-sourav-bhadani.c9.io/
+Completed 302 Found in 367ms (ActiveRecord: 41.5ms)
+
+
+Started GET "/" for 103.18.74.235 at 2015-08-17 20:10:54 +0000
+Processing by PinsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2844.1ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 3242ms (Views: 3223.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:58 +0000
+
+
+Started GET "/assets/blogs.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:58 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:58 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:58 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 103.18.74.235 at 2015-08-17 20:10:59 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/home.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/assets/home.css?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000

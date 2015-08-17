@@ -9,6 +9,9 @@ development:
   linkedin_key: "78zklh8gy0kssc"
   linkedin_secret: "JQqGu7gL8fOMM5Zu"
   
+  github_key:  "0211419db3487ea1516c"
+  github_secret: "4b8768f3e9aed0eaaf10f1818147556c1540e269"
+  
   
   
   
@@ -27,5 +30,6 @@ production:
   google_key: "798161002859-88asu3j73h2ci5m5r1pn08lt17i2lgg2.apps.googleusercontent.com"
   google_secret: "vFVwvNKGiCaDqLCTiYzRseZ2"
   
+  github_key:  "38bb8ae731da9f235a89"
+  github_secret:  "49c43aa9c156874682f2053a4831caf2a49ed95b"    
   
-   # provider :twitter, "", "dpkwkJdEC8vHdeBpcR2WpGjEOQU5cTlbj7vGfYDupPJNBx5DVZ", image_size: 'normal'

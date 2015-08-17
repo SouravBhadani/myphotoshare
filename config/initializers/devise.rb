@@ -9,6 +9,9 @@ Devise.setup do |config|
    config.omniauth :google_oauth2, ::APP_CONFIG["google_key"], ::APP_CONFIG["google_secret"]
     
    config.omniauth :linkedin, ::APP_CONFIG["linkedin_key"], ::APP_CONFIG["linkedin_secret"]
+   
+   config.omniauth :github, ::APP_CONFIG["github_key"], ::APP_CONFIG["github_secret"]
+  
   
   
   
