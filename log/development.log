@@ -15839,3 +15839,302 @@ Started GET "/assets/application.js?body=1" for 103.18.74.235 at 2015-08-17 20:1
 
 
 Started GET "/assets/home.css?body=1" for 103.18.74.235 at 2015-08-17 20:11:00 +0000
+
+
+Started GET "/pins/new" for 103.18.74.235 at 2015-08-17 20:23:39 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered pins/_form.html.erb (108.4ms)
+  Rendered pins/new.html.erb within layouts/application (116.5ms)
+  Rendered home/_header.html.erb (2.3ms)
+Completed 200 OK in 692ms (Views: 599.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/prettylinks/new" for 103.18.74.235 at 2015-08-17 20:23:43 +0000
+Processing by PrettylinksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 11  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered prettylinks/_form.html.erb (14.7ms)
+  Rendered prettylinks/new.html.erb within layouts/application (17.6ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 349ms (Views: 323.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 182.69.144.104 at 2015-08-18 10:26:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendered home/_jumbo.html.erb (1.4ms)
+  [1m[35mPin Load (0.3ms)[0m  SELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2920.2ms)
+  Rendered home/_header.html.erb (1.6ms)
+Completed 200 OK in 3561ms (Views: 3529.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/home.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:56 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/home.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 182.69.144.104 at 2015-08-18 10:26:57 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 182.69.144.104 at 2015-08-18 10:27:02 +0000
+
+
+Started GET "/blogs" for 182.69.144.104 at 2015-08-18 10:27:08 +0000
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered blogs/index.html.erb within layouts/application (21.9ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 384ms (Views: 365.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/pretty-urls-with-friendlyid-rails-gems" for 182.69.144.104 at 2015-08-18 10:28:29 +0000
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"pretty-urls-with-friendlyid-rails-gems"}
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs"  WHERE "blogs"."slug" = 'pretty-urls-with-friendlyid-rails-gems'  ORDER BY "blogs"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered blogs/show.html.erb within layouts/application (2.9ms)
+  Rendered home/_header.html.erb (0.7ms)
+Completed 200 OK in 333ms (Views: 318.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 182.69.144.104 at 2015-08-18 10:28:57 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (83.2ms)
+  Rendered home/_header.html.erb (1.1ms)
+Completed 200 OK in 435ms (Views: 431.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 182.69.144.104 at 2015-08-18 10:28:59 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+  Rendered home/_header.html.erb (0.9ms)
+Completed 200 OK in 355ms (Views: 352.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.69.144.104 at 2015-08-18 11:03:05 +0000
+Processing by PinsController#index as HTML
+  Rendered home/_jumbo.html.erb (0.5ms)
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT  "pins".* FROM "pins"   ORDER BY created_at DESC LIMIT 9 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pins/index.html.erb within layouts/application (2781.7ms)
+  Rendered home/_header.html.erb (0.6ms)
+Completed 200 OK in 3442ms (Views: 3438.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/home.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/prettylinks.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:08 +0000
+
+
+Started GET "/assets/socials.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/pins.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/jquery.turbolinks.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstraply.css?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/home.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/prettylinks.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/socials.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/blogs.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/play_tic_toe.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/pins.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 182.69.144.104 at 2015-08-18 11:03:09 +0000
+
+
+Started GET "/users/sign_in" for 182.69.144.104 at 2015-08-18 11:03:17 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered home/_header.html.erb (1.7ms)
+Completed 200 OK in 1065ms (Views: 1062.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/github" for 182.69.144.104 at 2015-08-18 11:03:24 +0000
+
+
+Started GET "/users/auth/github" for 182.69.144.104 at 2015-08-18 11:03:26 +0000
