@@ -2,3 +2,4 @@
   $("#chat").append("<%= j render(@message) %>");
 <% end %>
 $("#new_message")[0].reset();
+$("#chat")[0].scrollTop =  $("#chat")[0].scrollHeight;

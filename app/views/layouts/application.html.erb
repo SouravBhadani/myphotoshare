@@ -17,9 +17,25 @@
   <% flash.each do | name , msg| %>
       <%= content_tag(:div, msg, class:"alert alert-info") %>
   <% end %>
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+      <li> <%= link_to "List Pins" , pins_path %></li>
+      <li> <%= link_to "List Blogs" , blogs_path %></li>
+      <li> <%= link_to "List Preetty Url" , prettylinks_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Add Pin" ,new_pin_path  %></li>
+        <li><%= link_to "Messages" ,messages_path  %></li>
+        <li><%= link_to "Add Preetty Url" ,new_prettylink_path  %></li>
+        <li><%= link_to "Add Blog" ,new_blog_path  %></li>
+      <% end %>
+      </ul>
+    </div>
+    <div class="col-sm-9  main">
+      <%= yield %>
+    </div>
+  </div>
   
-  <%= yield %>
 </div>
-
 </body>
 </html>

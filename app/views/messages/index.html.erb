@@ -1,25 +1,21 @@
-<h1>Listing messages</h1>
-
-<h1>Chat</h1>
-
-<ul id="chat">
-  <%= render @messages %>
-</ul>
-
-
-
-<%= simple_form_for(@message , remote: true)  do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%# f.input :user_id %>
-    <%= f.input :body %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+<h2>Friend's Club Chat Room</h2>
+<hr>
+<div class="row" id="chat" style=" overflow-y: auto;max-height:330px; margin: 0px 0px 30px 45px;">
+    <%= render @messages %>
+</div>
+<%= simple_form_for(@message , remote: true,style: 'margin-top: 30px;')  do |f| %>
+    <%= f.error_notification %>
+	<div class="input-group">	
+		<input name="message[body]" type="text" id="inputText" placeholder="Add to the conversation" class="form-control input-large" required >
+		<span id="send" class="input-group-addon" style="cursor: pointer;" onClick="if($('#inputText').val()) $('#new_message').submit();">Post</span>
+	</div>
 <% end %>
-
-
 <%= subscribe_to "/messages/new" %>
+<script>
+$("#chat")[0].scrollTop =  $("#chat")[0].scrollHeight;
+</script>
+<style>
+div.image:nth-child(even) {
+   float:right;
+}
+</style>

@@ -1,0 +1,74 @@
+<i class="fa fa-spin fa-refresh fa-5x" id="loader"></i>
+<div class="container" ng-app="myApp" ng-controller="Main"> 
+  <h2>AngularJS Example - User Chat List Example</h2>
+  <h4>via <a href="">RandomUser.me</a> API + <a href="http://www.bootply.com/nXiqUjdLGq">Bootply</a></h4>
+  <hr>
+  <div class="row" id="userList">
+    <div ng-repeat="u in users" class="col-sm-12">
+      
+      <div class="row">
+        <div class="col-xs-2" ng-class-odd="'col-xs-push-10'">
+          <a href="" ng-click="showUserModal($index)"><img title="{{u.user.name.first}}" src="{{u.user.picture}}" class="img-thumbnail img-responsive img-circle" ng-class-even="'pull-right'" ng-class-odd="'pull-left'" style="width:70px;"></a>
+        </div>  
+        <div class="col-xs-10" ng-class-odd="'col-xs-pull-2'">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              {{u.user.text||"Blah text goes here blah bla! Hello blah period."}}<br>
+              <span class="label label-info">{{ u.date||randomDate() | date:'h:mma' }}</span>
+            </div>
+          </div>
+        </div><!--/col-->
+      </div><!--/row-->
+    
+    </div><!--/col-->
+  
+  </div><!--/row-->
+  
+  <div class="row">
+  
+    <hr>
+    
+    <h2 class="text-center">Got something to say?</h2>
+    
+    <div class="col-sm-12">
+      <div class="input-group">
+          <input class="form-control input-large" placeholder="Add to the conversation" id="inputText" type="text">
+          <span class="input-group-addon" ng-click="doPost()">Post</span>
+        </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+    <hr>
+  
+  </div>
+  
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header bg-info">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h1 id="myModalLabel" class="text-center"></h1>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4"><img src="{{currUser.picture}}" class="img-thumbnail img-responsive img-circle"></div>
+            </div>
+            <hr>
+            <div class="row">
+              <h4 class="text-center"><i class="fa fa-fw fa-map-marker fa-2x"></i> {{currUser.location.street}} {{currUser.location.city}}, {{currUser.location.state}}</h4>
+              <h4 class="text-center"><i class="fa fa-fw fa-phone fa-2x"></i> {{currUser.cell}}</h4>
+              <h4 class="text-center"><i class="fa fa-fw fa-envelope-o fa-2x"></i> {{currUser.email}}</h4>
+              <h4 class="text-center"><i class="fa fa-fw fa-user fa-2x"></i> {{currUser.username}}</h4>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer bg-info">
+            <button class="btn btn-lg btn-default center-block" data-dismiss="modal" aria-hidden="true">Okay!</button>
+        </div>
+    </div>
+    </div>
+  </div><!--/modal-->
+  
+</div><!--/container-->

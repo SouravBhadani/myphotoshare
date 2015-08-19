@@ -1,4 +1,21 @@
-<li>
-  <span class="created_at"><%# message.created_at.strftime("%H:%M") %></span>
-  <%= message.body %>
-</li>
+<div class="col-sm-10">
+  <div class="row">
+    <div class="col-xs-2 image" style="<%='float:right' if message.id.even?%>">
+      <a href="javascript:void(0);">
+      <% type =  ""#message.id.even? ? 'pull-right' : 'pull-left'
+      	 # side =  message.id.odd? ? 'col-xs-pull-2' : ''
+       %>
+      	<img title="hello" src="http://api.randomuser.me/portraits/women/22.jpg" style="width:70px;"
+      	class="img-thumbnail img-responsive img-circle <%= type %>" ></a>
+    </div>  
+    <div class="col-xs-10 <%=  %>">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= message.body %>
+          <br>
+          <span class="label label-info"><%= message.created_at.try(:strftime,"%b %d, %Y") %></span>
+        </div>
+      </div>
+    </div><!--/col-->
+  </div><!--/row-->
+</div>
