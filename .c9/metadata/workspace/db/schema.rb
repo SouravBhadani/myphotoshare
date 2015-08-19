@@ -1,1 +1,0 @@
-{"filter":false,"title":"schema.rb","tooltip":"/db/schema.rb","ace":{},"undoManager":{"mark":-1,"position":-1,"stack":[]},"timestamp":1439610293000,"hash":"9815dc3c7c5ac24b61f4614244cbe4da69b02aeb"}

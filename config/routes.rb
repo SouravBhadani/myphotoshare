@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+
   resources :prettylinks
 
   resources :blogs

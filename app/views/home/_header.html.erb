@@ -24,6 +24,7 @@
           
         <% if user_signed_in? %>
           <li><%= link_to "Add Pin" ,new_pin_path  %></li>
+          <li><%= link_to "Messages" ,new_message_path  %></li>
           <li><%= link_to "Add Preetty Url" ,new_prettylink_path  %></li>
           <li><%= link_to "Add Blog" ,new_blog_path  %></li>
           <li><%= link_to current_user.fullname ,"#"  %></li>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815152024) do
+ActiveRecord::Schema.define(version: 20150818120420) do
 
   create_table "blogs", force: true do |t|
     t.string   "title"
@@ -83,6 +83,13 @@ ActiveRecord::Schema.define(version: 20150815152024) do
 
   add_index "mentions", ["mentionable_id", "mentionable_type"], name: "fk_mentionables"
   add_index "mentions", ["mentioner_id", "mentioner_type"], name: "fk_mentions"
+
+  create_table "messages", force: true do |t|
+    t.integer  "user_id"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pins", force: true do |t|
     t.string   "descrption"
