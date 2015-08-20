@@ -1,5 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-
+rackup private_pub.ru -s thin -E production
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
