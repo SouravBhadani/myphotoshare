@@ -1,3 +1,101 @@
+<script>
+//$("#chat")[0].scrollTop =  $("#chat")[0].scrollHeight;
+
+      function ChatController($scope) {
+        var socket = io.connect();
+
+        $scope.messages = [];
+        $scope.roster = [];
+        $scope.name = 'jhvgvghvg';
+        $scope.text = '';
+
+        // socket.on('connect', function () {
+        //   $scope.setName();
+        // });
+
+        // socket.on('message', function (msg) {
+        //   $scope.messages.push(msg);
+        //   $scope.$apply();
+        // });
+
+        // socket.on('roster', function (names) {
+        //   $scope.roster = names;
+        //   $scope.$apply();
+        // });
+
+        $scope.send = function send() {
+          console.log('Sending message:', $scope.text);
+         // socket.emit('message', $scope.text);
+          $scope.text = '';
+        };
+
+        // $scope.setName = function setName() {
+        //   socket.emit('identify', $scope.name);
+        // };
+      }
+    </script>
+
+
+
+
+
+
+
+<div class="page-header">
+<h1>Just chat mitro</h1>
+</div>
+<div class="row" ng-controller="ChatController">
+<div class="span3">
+  <ul class="nav nav-list well">
+    {{ name }}
+  </ul>
+</div>
+<div class="span9">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th class="span2">Name</th>
+        <th class="span7">Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="msg in messages">
+        <td class="span2" ng-bind="msg.name"></td>
+        <td class="span7" ng-bind="msg.text"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row controls">
+    <form ng-submit="send()">
+      <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Your Name"></div>
+      <div class="input-append span7">
+        <input type="text" class="span6" ng-model="text" placeholder="Message">
+        <input type="submit" class="span1 btn btn-primary" value="Send" ng-disabled="!text">
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% if false %>
+
 <h2>Friend's Club Chat Room</h2>
 <hr>
 <div class="row" id="chat" style=" overflow-y: auto;max-height:330px; margin: 0px 0px 30px 45px;">
@@ -11,11 +109,10 @@
 	</div>
 <% end %>
 <%= subscribe_to "/messages/new" %>
-<script>
-$("#chat")[0].scrollTop =  $("#chat")[0].scrollHeight;
-</script>
+
 <style>
 div.image:nth-child(even) {
    float:right;
 }
 </style>
+<% end %>
