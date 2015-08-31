@@ -5,12 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
       <!-- Include jQuery, this can be omitted if it's already included -->
-
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+
+
 </head>
 <body>
+<script type="text/javascript">
+        var socket = io.connect("localhost:5000");
+        socket.on('connect', function () {
+          var user = {name: 'Anonymous', user_id: null };
+          <% if user_signed_in? %>
+            user.name = <%= current_user.first_name  %>;
+            user.user_id = <%= current_user.id  %>;
+          <% end %>     
+          socket.emit("connect_me",user);
+        });
 
+        socket.on('message', function (msg) {
+          console.log(msg);
+        });
+</script>
 <%= render "home/header" %>
 <div class="container" >
   
