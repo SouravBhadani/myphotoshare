@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html ng-app>
 <head>
   <title>Photo Share</title>
@@ -12,19 +12,16 @@
 </head>
 <body>
 <script type="text/javascript">
-        var socket = io.connect("localhost:5000");
-        socket.on('connect', function () {
-          var user = {name: 'Anonymous', user_id: null };
-          <% if user_signed_in? %>
-            user.name = <%= current_user.first_name  %>;
-            user.user_id = <%= current_user.id  %>;
-          <% end %>     
-          socket.emit("connect_me",user);
-        });
-
-        socket.on('message', function (msg) {
-          console.log(msg);
-        });
+  var socket = io.connect("localhost:5000");
+  var user = {name: 'Anonymous', user_id: 'null' };
+  <% if user_signed_in? %>
+    user.name    = "<%= current_user.first_name  %>";
+    user.user_id = "<%= current_user.id  %>";
+  <% end %>     
+  socket.on('connect', function () {
+    socket.emit("connect_me",user);
+  });
+  window.onbeforeunload = function() { socket.emit("release_me",user); };
 </script>
 <%= render "home/header" %>
 <div class="container" >

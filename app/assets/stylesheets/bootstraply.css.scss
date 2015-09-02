@@ -13,3 +13,7 @@ $jumbotron-bg: #ffffff;
 .center{
     text-align:center;
 }
+
+div.image > image:nth-child(odd) {
+   float:right;
+}

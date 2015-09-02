@@ -1,12 +1,9 @@
-<div class="col-sm-10">
+<div class="col-sm-10" >
   <div class="row">
-    <div class="col-xs-2 image" style="<%='float:right' if message.id.even?%>">
+    <div class="col-xs-2 image" >
       <a href="javascript:void(0);">
-      <% type =  ""#message.id.even? ? 'pull-right' : 'pull-left'
-      	 # side =  message.id.odd? ? 'col-xs-pull-2' : ''
-       %>
-      	<img title="hello" src="http://api.randomuser.me/portraits/women/22.jpg" style="width:70px;"
-      	class="img-thumbnail img-responsive img-circle <%= type %>" ></a>
+      	<img title="<%= message.user.fullname %>" class="img-thumbnail img-responsive img-circle " src="http://api.randomuser.me/portraits/women/22.jpg"  style="width:70px;">
+      </a>
     </div>  
     <div class="col-xs-10 <%=  %>">
       <div class="panel panel-default">

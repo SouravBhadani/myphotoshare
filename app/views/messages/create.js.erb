@@ -1,5 +1,11 @@
-<% publish_to "/messages/new" do %>
-  $("#chat").append("<%= j render(@message) %>");
-<% end %>
+var messgae = {id: null,content: '',user_id: null,created_at:null,user_name: ''};
+message.id 			= <%= @message.id %>;
+message.user_id 	= <%= @message.user_id %>;
+message.content 	= '<%= @message.body %>';
+message.created_at  = '<%= @message.created_at %>';
+message.user_name   = '<%= @message.user.fullname %>';
+
+// socket.emit("message",messgae);
+
+console.log(data);
 $("#new_message")[0].reset();
-$("#chat")[0].scrollTop =  $("#chat")[0].scrollHeight;

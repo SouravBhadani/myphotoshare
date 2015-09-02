@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   respond_to :html ,:js
 
   def index
-    @message = Message.new
+    @message = current_user.messages.build
     @messages = Message.all
     respond_with(@messages)
   end
@@ -14,7 +14,7 @@ class MessagesController < ApplicationController
   end
 
   def new
-    @message = Message.new
+    @message = current_user.messages.build
     respond_with(@message)
   end
 
@@ -22,10 +22,11 @@ class MessagesController < ApplicationController
   end
 
   def create
-
-    @message = Message.new(message_params)
+    @message = current_user.messages.build(message_params)
     @message.save
-    PrivatePub.publish_to("/messages/new", message: @message)
+    messgae = {id: @message.id,content: @message.body,user_id: @message.user_id ,created_at: @message.created_at.try(:strftime,"%b %d, %Y"),user_name:  @message.user.fullname }
+    $redis.publish('messages',messgae.to_json)
+   # PrivatePub.publish_to("/messages/new", message: @message)
     respond_with(@message)
   end
 

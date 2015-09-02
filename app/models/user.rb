@@ -24,10 +24,10 @@ class User < ActiveRecord::Base
   has_many :pins , dependent: :destroy
   has_many :blogs , dependent: :destroy 
   has_many :prettylinks , dependent: :destroy 
-  
+  has_many :messages , dependent: :destroy
   
   def fullname
-    "#{first_name}  #{last_name}"
+    "#{first_name} #{last_name}"
   end
   
   def self.find_for_oauth(auth, signed_in_resource = nil)
