@@ -1,6 +1,6 @@
 <div class="col-sm-10" >
   <div class="row">
-    <div class="col-xs-2 image" >
+    <div class="col-xs-2 image <%= 'float-right' if message.user == current_user %>" >
       <a href="javascript:void(0);">
       	<img title="<%= message.user.fullname %>" class="img-thumbnail img-responsive img-circle " src="http://api.randomuser.me/portraits/women/22.jpg"  style="width:70px;">
       </a>
