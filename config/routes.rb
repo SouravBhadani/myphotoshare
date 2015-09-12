@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :messages
 
   resources :prettylinks
@@ -10,5 +11,4 @@ Rails.application.routes.draw do
   resources :pins
   devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
   get 'home/about'
-  get 'home/play_tic_toe'  
 end

@@ -1,4 +1,5 @@
 class Blog < ActiveRecord::Base
+
     belongs_to :user
     validates_presence_of :desc ,:title
     extend FriendlyId
@@ -15,4 +16,8 @@ class Blog < ActiveRecord::Base
     def self.find(user)
      friendly.find(user)
     end 
+
+    def posted_on
+      "Posted on: #{created_at.strftime('%b %d , %Y')}"
+    end
 end

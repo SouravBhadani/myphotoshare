@@ -8,13 +8,16 @@
       </p>
     </div>
     <div class="panel-body">
-      <%= @blog.desc %>
+      <%= @blog.desc.html_safe %>
     </div>
      <div class="panel-footer">
       <% if user_signed_in? && current_user == @blog.user %>
         <%= link_to 'Edit', edit_blog_path(@blog) %> |
       <% end %>  
         <%= link_to "Back", :back %>
+        <span class='pull-right'>
+          <%= @blog.posted_on%>
+        </span>
     </div>
   </div>
 

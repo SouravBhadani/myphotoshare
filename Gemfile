@@ -41,6 +41,7 @@ gem "socialization"
 gem 'friendly_id', '~> 5.1.0'
 gem 'private_pub'
 gem "omniauth-github", '1.1.1'
+gem 'ckeditor'
 #gem 'thin'
 gem 'redis'
 gem 'pry'

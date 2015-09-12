@@ -1,8 +1,8 @@
 <h1 class="page-header">Listing blogs</h1>
   <div id="blogs" class="transitions-enabled">
     <% @blogs.each do |blog| %>
-        <div class="box">
-            <div class="panel panel-primary">
+        <div class="box pull-left">
+            <div class="panel panel-primary cl-md-4">
                 <div class="panel-heading bg-primary">
                      <%= link_to blog.title ,blog,class: 'bg-primary'%> 
                 </div>

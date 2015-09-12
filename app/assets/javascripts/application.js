@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require private_pub
 //= require turbolinks
+//= require ckeditor/init
 //= require bootstrap-sprockets
 //= require masonry/jquery.masonry
 //= require_tree .

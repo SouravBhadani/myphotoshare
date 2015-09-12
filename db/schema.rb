@@ -11,11 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818120420) do
+ActiveRecord::Schema.define(version: 20150912151352) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "blogs", force: true do |t|
     t.string   "title"
-    t.text     "desc",       limit: 255
+    t.text     "desc"
     t.string   "url"
     t.string   "tags"
     t.string   "category"
@@ -26,7 +29,23 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.string   "slug"
   end
 
-  add_index "blogs", ["slug"], name: "index_blogs_on_slug"
+  add_index "blogs", ["slug"], name: "index_blogs_on_slug", using: :btree
+
+  create_table "ckeditor_assets", force: true do |t|
+    t.string   "data_file_name",               null: false
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.integer  "assetable_id"
+    t.string   "assetable_type",    limit: 30
+    t.string   "type",              limit: 30
+    t.integer  "width"
+    t.integer  "height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable", using: :btree
+  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
   create_table "follows", force: true do |t|
     t.string   "follower_type"
@@ -36,8 +55,8 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "created_at"
   end
 
-  add_index "follows", ["followable_id", "followable_type"], name: "fk_followables"
-  add_index "follows", ["follower_id", "follower_type"], name: "fk_follows"
+  add_index "follows", ["followable_id", "followable_type"], name: "fk_followables", using: :btree
+  add_index "follows", ["follower_id", "follower_type"], name: "fk_follows", using: :btree
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -47,10 +66,10 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "created_at"
   end
 
-  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
-  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
-  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
-  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "identities", force: true do |t|
     t.integer  "user_id"
@@ -60,7 +79,7 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "updated_at"
   end
 
-  add_index "identities", ["user_id"], name: "index_identities_on_user_id"
+  add_index "identities", ["user_id"], name: "index_identities_on_user_id", using: :btree
 
   create_table "likes", force: true do |t|
     t.string   "liker_type"
@@ -70,8 +89,8 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "created_at"
   end
 
-  add_index "likes", ["likeable_id", "likeable_type"], name: "fk_likeables"
-  add_index "likes", ["liker_id", "liker_type"], name: "fk_likes"
+  add_index "likes", ["likeable_id", "likeable_type"], name: "fk_likeables", using: :btree
+  add_index "likes", ["liker_id", "liker_type"], name: "fk_likes", using: :btree
 
   create_table "mentions", force: true do |t|
     t.string   "mentioner_type"
@@ -81,8 +100,8 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "created_at"
   end
 
-  add_index "mentions", ["mentionable_id", "mentionable_type"], name: "fk_mentionables"
-  add_index "mentions", ["mentioner_id", "mentioner_type"], name: "fk_mentions"
+  add_index "mentions", ["mentionable_id", "mentionable_type"], name: "fk_mentionables", using: :btree
+  add_index "mentions", ["mentioner_id", "mentioner_type"], name: "fk_mentions", using: :btree
 
   create_table "messages", force: true do |t|
     t.integer  "user_id"
@@ -102,7 +121,7 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.datetime "image_updated_at"
   end
 
-  add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+  add_index "pins", ["user_id"], name: "index_pins_on_user_id", using: :btree
 
   create_table "prettylinks", force: true do |t|
     t.string   "url"
@@ -134,8 +153,8 @@ ActiveRecord::Schema.define(version: 20150818120420) do
     t.string   "slug"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  add_index "users", ["slug"], name: "index_users_on_slug"
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["slug"], name: "index_users_on_slug", using: :btree
 
 end
