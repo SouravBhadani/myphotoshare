@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   TEMP_EMAIL_REGEX = /\Achange@me/
   
   acts_as_liker
-  attr_reader :fullname
   extend FriendlyId
+  
   friendly_id :slug_candidates, use: :slugged
   
   def slug_candidates
@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   has_many :blogs , dependent: :destroy 
   has_many :prettylinks , dependent: :destroy 
   has_many :messages , dependent: :destroy
+  has_many :games , dependent: :destroy  
   
   def fullname
     "#{first_name} #{last_name}"

@@ -1,0 +1,89 @@
+<div class='row margin-top-40'>
+	<div class='cl-sm-6 cl-md-6 pull-left'>
+		<div class='row'>
+			<div class='row'>
+				<div class='cl-md-12 margin-bot-40'>
+					<%= link_to 'PLAYER',"#",:class=>'button button-primary button-rounded button-jumbo' %>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='cl-md-12 margin-bot-40'>
+					<%= link_to "Score","#",:class=>'button button-3d button-action button-pill' %>
+					<button class="button button-glow button-circle button-action button-jumbo" id='p_score'>
+					    <%= @game.p_score%>
+				    </button>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='cl-md-12 margin-right-10' id="hit">
+					<% @game_step.player_cards.each do |f| %>
+						<%= link_to f, "#",:class=>'button button-primary button-box button-large' %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='cl-sm-6 cl-md-6 pull-right'>
+		<div class='row'>
+			<div class='row'>
+				<div class='cl-md-12 margin-bot-40 pull-left'>
+					<%= link_to 'DEALER',"#",:class=>'button button-royal button-rounded button-jumbo' %>
+				</div>
+			</div>
+			<div class='row'>	
+				<div class='cl-md-12 margin-bot-40'>
+					<button class="button button-glow button-circle button-action button-jumbo" id='d_score'>
+					    <%= @game.d_score%>
+				    </button>
+				    <%= link_to "Score","#",:class=>'button button-3d button-action button-pill' %>
+				</div>
+			</div>
+			<div class='row'>	
+				<div class='cl-md-12 margin-right-10 pull-left' id="stand">
+					<% @game_step.dealer_cards.each do |f| %>
+						<%= link_to f, "#",:class=>'button button-primary button-box button-large' %>
+					<% end %>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+<div class="row margin-top-40">
+	<div class="cl-sm-12 cl-md-12">
+		<center>
+			<%= link_to "Hit", hit_path(id: @game.id, step_type: 'hit'), remote: true,:class=>'button button-glow button-rounded button-caution', id: 'hit_button' %>
+			<%= link_to "Stand", stand_path(id: @game.id, step_type: 'stand'), remote: true, :class=>'button button-glow button-rounded button-highlight', id: 'stand_button' %>
+		</center>
+	</div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog modal-lg">
+	  <div class="modal-content">
+	    <div class="row margin-top-40 margin-bot-40">
+	      <div class="cl-sm-12 cl-md-12">
+	        <div class="cl-sm-12 cl-md-12">
+	          <center>
+	            <%= link_to @game.result,"javascript:void(0);",:class=>'button button-glow button-rounded button-caution margin-right-20' ,id: 'winner_text' %>
+	          </center>
+	        </div>
+	      </div>
+	      <div class="cl-sm-12 cl-md-12 margin-top-40">
+	        <center>
+	          <%= link_to 'PLAY AGAIN', root_path,:class=>'button button-royal button-rounded button-jumbo margin-right-20' %>
+	          <%= link_to 'STATISTICS', statitistics_path ,:class=>'button button-royal button-rounded button-jumbo' %>
+	        </center>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    $('#myModal').on('hidden.bs.modal', function (e) {
+  		window.location= "<%= game_path %>";
+	});
+    <% if @game.result.present? %>
+		game_over("<%= @game.result %>");
+	<% end %>	
+</script>
