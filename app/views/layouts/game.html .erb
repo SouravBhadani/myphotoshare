@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>BlackJack</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	  <meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1">
+	  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+      <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+			    <div class="navbar-header">
+			    	<a class="navbar-brand" href="<%= root_path %>">Black Jack</a>
+			    </div>
+    		<div>
+		</nav>
+		<div class="container" >
+			<% flash.each do | name , msg| %>
+      			<%= content_tag(:div, msg, class:"alert alert-info") %>
+  			<% end %>
+			<div class='row margin-top-100 margin-rl-200'>
+				<%= yield %>
+			</div>
+		</div>	
+	</body>
+</html>
+

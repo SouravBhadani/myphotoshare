@@ -1,0 +1,17 @@
+<% if @card.present? %>
+	
+	var game_status = <%= @game_completed %>;
+	var step_type   = "<%= @step_type %>";
+	var result      = "<%= @game.result %>";
+	
+	$("div#"+step_type).append('<%= link_to @card, "#",:class=>"button button-primary button-box button-large" %>');
+	$('#p_score').text("<%= @game.p_score %>");
+	$('#d_score').text("<%= @game.d_score %>");
+
+	if (game_status){
+		game_over(result);
+	}else if(step_type == 'stand'){
+		game_stand();
+	}
+
+<% end %>
