@@ -9,22 +9,22 @@ default: &default
   pool: 5
   timeout: 5000
 
-development:
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
-  database:   d4m8ol9ar4k1nv
-  host: ec2-54-197-249-167.compute-1.amazonaws.com
-  port: 5432
-  password: K749I3rOl8NjuOrfxyTNZqH0UU
-  psql:   heroku pg:psql --app heroku-postgres-da0c4781 HEROKU_POSTGRESQL_GOLD
-  url:   postgres://xhdnhdarfvzqeh:K749I3rOl8NjuOrfxyTNZqH0UU@ec2-54-197-249-167.compute-1.amazonaws.com:5432/d4m8ol9ar4k1nv
+# development:
+#   adapter: postgresql
+#   pool: 5
+#   timeout: 5000
+#   database:   d4m8ol9ar4k1nv
+#   host: ec2-54-197-249-167.compute-1.amazonaws.com
+#   port: 5432
+#   password: K749I3rOl8NjuOrfxyTNZqH0UU
+#   psql:   heroku pg:psql --app heroku-postgres-da0c4781 HEROKU_POSTGRESQL_GOLD
+#   url:   postgres://xhdnhdarfvzqeh:K749I3rOl8NjuOrfxyTNZqH0UU@ec2-54-197-249-167.compute-1.amazonaws.com:5432/d4m8ol9ar4k1nv
 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+development:
   <<: *default
   database: db/test.sqlite3
 

@@ -1,0 +1,25 @@
+<div class="row">
+	<p><center><h2>STATISTICS</h2></center></p>
+	<div class="cl-sm-12 cl-md-12">
+		<table class="table table-condensed">
+		    <thead>
+		      <tr>
+		        <th>Game No.</th>
+		        <th>Player</th>
+		        <th>Dealer</th>
+		        <th>Result</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<% @games.each_with_index do |f, index| %>
+			      <tr>
+			        <td><%= index %></td>
+			        <td><%= f.p_score %></td>
+			        <td><%= f.d_score %></td>
+			        <td><%= f.game_result %></td>
+			      </tr>
+			    <% end %>
+		    </tbody>
+		</table>
+	</div>
+</div>
