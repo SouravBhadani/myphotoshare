@@ -95,4 +95,7 @@ config.action_mailer.default_url_options = { :host => '1stpokerstop.com' }
   
   # Added as per dwvise instalation instrucation
    config.action_mailer.default_url_options = { host: 'sourav-bhadani.herokuapp.com' }
+   config.serve_static_assets = true
+   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+   config.assets.compile = false # we don't want compilation fallbacks
 end
