@@ -70,7 +70,7 @@
 	      </div>
 	      <div class="cl-sm-12 cl-md-12 margin-top-40">
 	        <center>
-	          <%= link_to 'PLAY AGAIN', root_path,:class=>'button button-royal button-rounded button-jumbo margin-right-20' %>
+	          <%= link_to 'PLAY AGAIN', play_path,:class=>'button button-royal button-rounded button-jumbo margin-right-20' %>
 	          <%= link_to 'STATISTICS', statitistics_path ,:class=>'button button-royal button-rounded button-jumbo' %>
 	        </center>
 	      </div>
@@ -81,7 +81,7 @@
 
 <script type="text/javascript">
     $('#myModal').on('hidden.bs.modal', function (e) {
-  		window.location= "<%= game_path %>";
+  		window.location= "<%= play_path %>";
 	});
     <% if @game.result.present? %>
 		game_over("<%= @game.result %>");

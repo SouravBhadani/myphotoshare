@@ -16,7 +16,6 @@
 		$('#chat').scrollTop($('#chat').height());
 	});
 
-
 	 socket.emit("join_group");
 	 socket.on('group_message',function(data){
 	 	data = JSON.parse(data);
